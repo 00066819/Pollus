@@ -8,6 +8,15 @@
     android:background="@color/background_app"
     tools:context=".Login">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/logo_in_login_size"
+        android:layout_height="@dimen/logo_in_login_size"
+        android:layout_marginBottom="@dimen/default_gap"
+        android:src="@drawable/logo_transparent_background"
+        app:layout_constraintBottom_toTopOf="@+id/pollus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/pollus"
@@ -124,15 +133,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="@dimen/logo_in_login_size"
-        android:layout_height="@dimen/logo_in_login_size"
-        android:layout_marginBottom="@dimen/default_gap"
-        android:src="@drawable/logo_transparent_background"
-        app:layout_constraintBottom_toTopOf="@+id/pollus"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

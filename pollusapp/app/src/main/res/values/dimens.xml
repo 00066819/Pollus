@@ -3,4 +3,8 @@
     <dimen name="default_gap">16dp</dimen>
     <dimen name="small_gap">8dp</dimen>
     <dimen name="logo_in_login_size">165dp</dimen>
+    <dimen name="logo_h_register_size">126dp</dimen>
+    <dimen name="logo_w_register_size">135dp</dimen>
+    <dimen name="back_w_register">50dp</dimen>
+    <dimen name="back_h_register">44dp</dimen>
 </resources>

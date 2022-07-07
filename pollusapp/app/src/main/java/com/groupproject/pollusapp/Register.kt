@@ -1,19 +1,18 @@
 package com.groupproject.pollusapp
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 
+class Register : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+        }
+    }
 
-class Login : Fragment() {
-
-        fun newInstance(param1: String, param2: String) =
-            Login().apply {
-                arguments = Bundle().apply {
-                }
-            }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -21,4 +20,6 @@ class Login : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_register, container, false)
     }
-    }
+
+
+            }

@@ -11,4 +11,13 @@
     <string name="no_acount_to_register_text">¿No posees una cuenta? Regístrate</string>
     <string name="need_help_text">¿Necesitas ayuda? Contactanos</string>
     <string name="pass_hint_text">Contraseña</string>
+    <string name="register_name_hint">Juan Perez</string>
+    <string name="email_register_hint">juanperez@gmail.com</string>
+    <string name="imput_pass_hint">Ingrese una contraseña</string>
+    <string name="code_register_hint">CodEjemplo09</string>
+    <string name="code_textView">Código de Organización/Empresa a la que pertenece</string>
+    <string name="pass_register_hint">Contraseña</string>
+    <string name="email_textView">Email</string>
+    <string name="name_textView">Nombre</string>
+    <string name="register_button_text">Registrar</string>
 </resources>
