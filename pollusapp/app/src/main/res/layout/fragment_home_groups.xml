@@ -15,5 +15,15 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="#3E6680"        />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:src="@drawable/menu_bars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
