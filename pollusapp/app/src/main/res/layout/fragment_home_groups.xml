@@ -15,13 +15,13 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="#3E6680"        />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <ImageButton
+        android:id="@+id/home_groups_menu_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
         android:layout_marginTop="@dimen/small_gap"
-        android:src="@drawable/menu_bars"
+        android:background="@drawable/menu_bars"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
