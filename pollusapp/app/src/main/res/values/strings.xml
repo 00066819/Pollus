@@ -27,4 +27,7 @@
     <string name="create_survey_btn_text">Crear nueva encuesta</string>
     <string name="create_newquestion_textbtn">nueva pregunta</string>
     <string name="save_questions_textbtn">guardar</string>
+    <string name="email_text">Correo electronico</string>
+    <string name="example_email_text">juanperez@gmail.com</string>
+    <string name="change_pass_textbtn">Cambiar contraseña</string>
 </resources>
