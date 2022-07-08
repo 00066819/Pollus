@@ -23,4 +23,8 @@
     <string name="survey_title">Titulo de encuestas</string>
     <string name="survey_info">Info de encuesta</string>
     <string name="survey_did">1</string>
+    <string name="example_question_text">1. ¿Del 1 al 5 que tan satisfecho se siente con el trabajo realizado en el proyecto de bacheo de calle en la colonia X</string>
+    <string name="create_survey_btn_text">Crear nueva encuesta</string>
+    <string name="create_newquestion_textbtn">nueva pregunta</string>
+    <string name="save_questions_textbtn">guardar</string>
 </resources>

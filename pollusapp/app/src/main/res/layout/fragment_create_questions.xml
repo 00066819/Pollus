@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    tools:context=".CreateQuestions">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/back_w_register"
+        android:layout_height="@dimen/back_h_register"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/default_gap"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/trash_btn"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:background="@drawable/trash_icons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:background="@color/card_questions_background"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5">
+
+        <CheckBox
+            android:id="@+id/question1_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_gap"
+            android:layout_marginTop="@dimen/small_gap"
+            android:layout_marginEnd="@dimen/small_gap"
+            android:layout_marginBottom="@dimen/small_gap"
+            android:checked="false"
+            android:text="@string/example_question_text" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/create_newquestion_button"
+        style="Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_gap"
+        android:backgroundTint="@color/primary_color"
+        android:text="@string/create_newquestion_textbtn"
+        app:icon="@drawable/plus"
+        app:iconSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/save_questions_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save_questions_btn"
+        style="Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="@string/save_questions_textbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/create_newquestion_button"
+        app:layout_constraintStart_toStartOf="@+id/create_newquestion_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

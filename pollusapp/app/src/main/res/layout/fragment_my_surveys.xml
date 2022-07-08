@@ -119,12 +119,12 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/login_google_button"
+        android:id="@+id/create_newsurvey_button"
         style="Widget.MaterialComponents.Button.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary_color"
-        android:text="@string/iniciar_con_google_text_button"
+        android:text="@string/create_survey_btn_text"
         app:icon="@drawable/plus"
         app:iconSize="25dp"
         android:layout_marginBottom="20dp"
