@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register"
+    tools:context=".ChangePass"
     android:background="@color/background_app">
 
     <ImageButton
@@ -13,110 +13,44 @@
         android:layout_height="@dimen/back_h_register"
         android:background="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/User_image"
         android:layout_width="@dimen/logo_w_register_size"
         android:layout_height="@dimen/logo_h_register_size"
-        android:src="@drawable/logo_transparent_background"
+        android:src="@drawable/user_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        android:layout_marginTop="1dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/Name_user_example_text"
+        android:layout_marginTop="@dimen/small_gap"/>
 
     <TextView
-        android:id="@+id/pollus"
+        android:id="@+id/Name_user_example_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/name_app_textview"
+        android:text="Juan Perez"
         android:textAppearance="@style/pollus"
         android:textSize="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/default_gap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <TextView
-        android:id="@+id/name_register_textView"
+        android:id="@+id/currently_password_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/name_textView"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:text="@string/curently_pass"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pollus" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/User_image" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name_register_textImput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_gap"
-        android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/register_name_hint"
-        app:boxBackgroundColor="@color/background_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_register_textView">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColorHint="@color/text_color_hint" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/email_register_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/email_textView"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_register_textImput" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_register_textImput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_gap"
-        android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/email_register_hint"
-        app:boxBackgroundColor="@color/background_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_register_textview">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColorHint="@color/text_color_hint" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/password_register_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/pass_register_hint"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_register_textImput" />
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_register_textImput"
+        android:id="@+id/password_curent_textImput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
@@ -125,7 +59,7 @@
         app:boxBackgroundColor="@color/background_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_register_textview"
+        app:layout_constraintTop_toBottomOf="@+id/currently_password_textview"
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -137,46 +71,84 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/code_register_textView"
+        android:id="@+id/new_password_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/code_textView"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:text="Ingrese una nueva contraseña"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_register_textImput" />
+        app:layout_constraintTop_toBottomOf="@+id/password_curent_textImput" />
 
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/code_register_textImput"
+        android:id="@+id/newpassword_textImput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
         android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/code_register_hint"
+        android:hint="@string/imput_pass_hint"
         app:boxBackgroundColor="@color/background_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/code_register_textView">
+        app:layout_constraintTop_toBottomOf="@+id/new_password_textview"
+        app:endIconMode="password_toggle"
+        app:helperText="@string/pass_helperText"
+        app:helperTextEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/text_color_hint" />
+            android:textColorHint="@color/text_color_hint"
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/confirm_newpass_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:text="@string/confirm_newpass"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newpassword_textImput" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_newpass_textImput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        android:hint="@string/imput_pass_hint"
+        app:boxBackgroundColor="@color/background_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_newpass_textview"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_hint"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/save_newpass_button"
+        style="Widget.MaterialComponents.Button.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary_color"
-        android:text="@string/register_button_text"
+        android:text="Guardar"
+        app:icon="@drawable/key_icon"
+        app:iconSize="20dp"
+        android:layout_marginBottom="@dimen/default_gap"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/code_register_textImput" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

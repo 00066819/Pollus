@@ -30,4 +30,8 @@
     <string name="email_text">Correo electronico</string>
     <string name="example_email_text">juanperez@gmail.com</string>
     <string name="change_pass_textbtn">Cambiar contraseña</string>
+    <string name="curently_pass">Ingrese la contrseña actual</string>
+    <string name="newpass_textview">Ingrese una nueva contraseña</string>
+    <string name="pass_helperText">La contraseña debe tener un minimo de 8 caracteres</string>
+    <string name="confirm_newpass">Confirme su nueva contraseña</string>
 </resources>
