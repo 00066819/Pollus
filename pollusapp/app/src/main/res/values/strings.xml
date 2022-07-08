@@ -20,4 +20,7 @@
     <string name="email_textView">Email</string>
     <string name="name_textView">Nombre</string>
     <string name="register_button_text">Registrar</string>
+    <string name="survey_title">Titulo de encuestas</string>
+    <string name="survey_info">Info de encuesta</string>
+    <string name="survey_did">1</string>
 </resources>
