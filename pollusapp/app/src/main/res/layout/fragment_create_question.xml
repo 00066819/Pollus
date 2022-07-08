@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    tools:context=".CreateQuestion">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/back_w_register"
+        android:layout_height="@dimen/back_h_register"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginLeft="@dimen/default_gap"
+        />
+
+    <TextView
+        android:id="@+id/cq_write_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/write_your_question"
+        android:textColor="@color/black"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn"
+        android:textSize="18dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cq_survey_question_impoutText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_gap"
+        android:layout_marginEnd="@dimen/default_gap"
+        app:boxBackgroundColor="@color/background_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cq_write_question">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/cq_write_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/write_your_answers"
+        android:textColor="@color/black"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cq_survey_question_impoutText"
+        android:textSize="18dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cq_survey_questions_impoutText"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        app:boxBackgroundColor="@color/background_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cq_write_answers">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/cq_delete_answer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/minus_circle"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E3242B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cq_survey_questions_impoutText"
+        app:layout_constraintTop_toBottomOf="@+id/cq_write_answers" />
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/plus_circle"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_marginTop="@dimen/default_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cq_survey_questions_impoutText" />
+
+    <Button
+        android:id="@+id/login_google_button"
+        style="Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_color"
+        android:text="@string/save"
+        app:icon="@drawable/save"
+        app:iconSize="25dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
