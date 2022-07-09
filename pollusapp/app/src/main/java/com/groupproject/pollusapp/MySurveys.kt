@@ -34,7 +34,7 @@ class MySurveys : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_surveys, container, false)
+        return inflater.inflate(R.layout.fragment_slideshow, container, false)
     }
 
     companion object {

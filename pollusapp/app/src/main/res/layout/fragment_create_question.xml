@@ -105,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primary_color"
-        android:text="@string/save"
+        android:text="@string/save_questions_textbtn"
         app:icon="@drawable/save"
         app:iconSize="25dp"
         android:layout_marginBottom="16dp"
