@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_app"
-    tools:context=".UserProfile">
+    tools:context=".ui.home.HomeFragment">
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="@dimen/back_w_register"
         android:layout_height="@dimen/back_h_register"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginLeft="@dimen/default_gap"
         android:background="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

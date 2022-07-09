@@ -12,6 +12,8 @@
         android:layout_width="@dimen/back_w_register"
         android:layout_height="@dimen/back_h_register"
         android:background="@drawable/back"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginLeft="@dimen/default_gap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

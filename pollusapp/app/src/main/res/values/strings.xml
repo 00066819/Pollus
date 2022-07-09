@@ -34,4 +34,15 @@
     <string name="newpass_textview">Ingrese una nueva contraseña</string>
     <string name="pass_helperText">La contraseña debe tener un minimo de 8 caracteres</string>
     <string name="confirm_newpass">Confirme su nueva contraseña</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

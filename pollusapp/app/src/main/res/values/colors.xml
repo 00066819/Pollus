@@ -11,4 +11,5 @@
     <color name="primary_color">#027BCE</color>
     <color name="text_color_hint">#546E7A</color>
     <color name="card_questions_background">#F6F6F6</color>
+    <color name="dark_blue">#3E6680</color>
 </resources>
