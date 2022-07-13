@@ -36,4 +36,8 @@ object RetrofitInstance {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
+    fun getWordServices(): WordService {
+        return retrofit.create(WordService::class.java)
+    }
+
 }

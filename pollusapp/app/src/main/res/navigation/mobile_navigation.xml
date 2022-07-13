@@ -21,5 +21,53 @@
         android:id="@+id/nav_slideshow"
         android:name="com.groupproject.pollusapp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_createSurveyFragment"
+            app:destination="@id/createSurveyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createQuestion"
+        android:name="com.groupproject.pollusapp.CreateQuestion"
+        android:label="fragment_create_question"
+        tools:layout="@layout/fragment_create_question" />
+    <fragment
+        android:id="@+id/createSurveyFragment"
+        android:name="com.groupproject.pollusapp.CreateSurveyFragment"
+        android:label="fragment_create_survey"
+        tools:layout="@layout/fragment_create_survey" >
+        <action
+            android:id="@+id/action_createSurveyFragment_to_createQuestions"
+            app:destination="@id/createQuestions" />
+    </fragment>
+    <activity
+        android:id="@+id/login2"
+        android:name="com.groupproject.pollusapp.ui.login.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/createQuestions"
+        android:name="com.groupproject.pollusapp.CreateQuestions"
+        android:label="fragment_questions_list"
+        tools:layout="@layout/fragment_questions_list" />
+    <fragment
+        android:id="@+id/changePass"
+        android:name="com.groupproject.pollusapp.ChangePass"
+        android:label="fragment_change_pass"
+        tools:layout="@layout/fragment_change_pass" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.groupproject.pollusapp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/beforeSurveyFragment"
+        android:name="com.groupproject.pollusapp.BeforeSurveyFragment"
+        android:label="fragment_before_survey"
+        tools:layout="@layout/fragment_before_survey" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.groupproject.pollusapp.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
 </navigation>

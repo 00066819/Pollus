@@ -1,14 +1,17 @@
-package com.groupproject.pollusapp
+package com.groupproject.pollusapp.ui.login
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
+import androidx.databinding.DataBindingUtil
+import com.dgasteazoro.dummydictionary.ui.ViewModelFactory
+import com.dgasteazoro.dummydictionary.ui.login.LoginUiStatus
+import com.dgasteazoro.dummydictionary.ui.login.LoginViewModel
+import com.groupproject.pollusapp.MainActivity
+import com.groupproject.pollusapp.PollusApplication
+import com.groupproject.pollusapp.R
 import com.groupproject.pollusapp.databinding.FragmentLoginBinding
 
 
@@ -16,7 +19,7 @@ class Login : AppCompatActivity() {
 
     private lateinit var binding: FragmentLoginBinding
     val app by lazy {
-        application as
+        application as PollusApplication
     }
     private val viewModelFactory by lazy {
         ViewModelFactory(app.getLoginRepository())
@@ -30,8 +33,8 @@ class Login : AppCompatActivity() {
         if (app.isUserLogin()) {
             return startMainActivity()
         }
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
-        binding.viewModel = viewModel
+        binding = DataBindingUtil.setContentView(this, R.layout.fragment_login)
+        binding.viewModel= viewModel
 
         viewModel.status.observe(this) { status ->
             handleUiState(status)

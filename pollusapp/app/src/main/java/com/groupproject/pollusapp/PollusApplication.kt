@@ -1,26 +1,25 @@
 package com.groupproject.pollusapp
 
+import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
+import com.groupproject.pollusapp.network.RetrofitInstance
+import com.groupproject.pollusapp.repository.LoginRepository
 
-class PollusApplication {
+class PollusApplication: Application() {
     private val prefs: SharedPreferences by lazy {
         getSharedPreferences("DummyDictionary", Context.MODE_PRIVATE)
     }
 
-    private val dataBase by lazy {
-        DummyDictionaryDatabase.getInstance(this)
-    }
 
     private fun getAPIService() = with(RetrofitInstance) {
         setToken(getToken())
         getWordServices()
+
     }
 
-    fun getDictionaryRepository() =
-        DictionaryRepository(dataBase, getAPIService())
 
-    fun getLoginRepository() =
+fun getLoginRepository() =
         LoginRepository(getAPIService())
 
     private fun getToken(): String = prefs.getString(USER_TOKEN, "")!!
