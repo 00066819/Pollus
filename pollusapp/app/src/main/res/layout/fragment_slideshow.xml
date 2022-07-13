@@ -3,40 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="@dimen/default_gap"
+    android:background="@color/background_app"
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/default_gap"
-        android:layout_marginLeft="60dp"
-        android:text="MIS ENCUESTAS"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/CardFull"
         android:layout_width="300dp"
         android:layout_height="110dp"
-        android:layout_marginTop="5dp"
         android:background="@color/white"
         app:cardCornerRadius="10dp"
+        android:layout_marginTop="@dimen/default_gap"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/surveys_survey_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
             android:text="@string/survey_title"
             android:textColor="@color/black"
-            android:textSize="14dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="10dp"/>
+            android:textSize="14dp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="300dp"
@@ -47,40 +39,38 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ultima actualizacion:"
-                android:textColor="@color/black"
-                android:textSize="12dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
-                />
+                android:text="Ultima actualizacion:"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
             <TextView
                 android:id="@+id/surveys_survey_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/survey_info"
-                android:textSize="12dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                />
+                android:text="@string/survey_info"
+                android:textSize="12dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Respuestas:"
-                android:textColor="@color/black"
-                android:textSize="12dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="35dp"
-                />
+                android:text="Respuestas:"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
             <TextView
                 android:id="@+id/surveys_survey_did"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/survey_did"
-                android:textSize="12dp"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="35dp"
-                />
+                android:text="@string/survey_did"
+                android:textSize="12dp" />
 
         </androidx.cardview.widget.CardView>
 

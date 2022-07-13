@@ -48,4 +48,7 @@
     <string name="write_your_question">Escribe tu pregunta</string>
     <string name="write_your_answers">Escribe tus respuestas</string>
     <string name="next">Siguiente</string>
+    <string name="email_profile_default">juanperez@gmail.com</string>
+    <string name="org_default_text">Alcaldia Municipal de Usulutan</string>
+    <string name="cancel_button">Cancelar</string>
 </resources>

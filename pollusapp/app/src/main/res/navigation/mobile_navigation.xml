@@ -23,8 +23,30 @@
         android:label="Mis encuentas"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/changePass"
-        android:name="com.groupproject.pollusapp.ChangePass"
-        android:label="fragment_change_pass"
-        tools:layout="@layout/fragment_change_pass" />
+        android:id="@+id/nav_changepassword"
+        android:name="com.groupproject.pollusapp.ui.changepass.ChangePasswordFragment"
+        android:label="Cambiar contraseña"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/beforeSurveyFragment"
+        android:name="com.groupproject.pollusapp.BeforeSurveyFragment"
+        android:label="Pasar encuesta"
+        tools:layout="@layout/fragment_before_survey" />
+    <fragment
+        android:id="@+id/createSurveyFragment"
+        android:name="com.groupproject.pollusapp.CreateSurveyFragment"
+        android:label="Crear encuesta"
+        tools:layout="@layout/fragment_create_survey" />
+    <fragment
+        android:id="@+id/nav_questionsList"
+        android:name="com.groupproject.pollusapp.QuestionsListFragment"
+        android:label="Preguntas"
+        tools:layout="@layout/fragment_questions_list" />
+    <fragment
+        android:id="@+id/nav_create_Question"
+        android:name="com.groupproject.pollusapp.ui.createQuestion.Create_Question"
+        android:label="Crear pregunta"
+        tools:layout="@layout/fragment_create__question" />
+
+
 </navigation>

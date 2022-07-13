@@ -5,22 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_app"
-    tools:context=".CreateQuestions">
-
-    <ImageButton
-        android:id="@+id/back_btn"
-        android:layout_width="@dimen/back_w_register"
-        android:layout_height="@dimen/back_h_register"
-        android:layout_marginStart="@dimen/default_gap"
-        android:layout_marginTop="@dimen/default_gap"
-        android:background="@drawable/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".QuestionsListFragment">
 
     <ImageButton
         android:id="@+id/trash_btn"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginTop="@dimen/default_gap"
         android:layout_marginEnd="@dimen/default_gap"
         android:background="@drawable/trash_icons"
@@ -61,7 +51,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/create_newquestion_button"
+        android:id="@+id/btn_new"
         style="Widget.MaterialComponents.Button.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,8 +73,8 @@
         android:backgroundTint="@color/primary_color"
         android:text="@string/save_questions_textbtn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/create_newquestion_button"
-        app:layout_constraintStart_toStartOf="@+id/create_newquestion_button" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_new"
+        app:layout_constraintStart_toStartOf="@+id/btn_new" />
 
 
 

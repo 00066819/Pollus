@@ -2,7 +2,6 @@ package com.groupproject.pollusapp
 
 import android.os.Bundle
 import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -34,7 +33,9 @@ class MainMenu : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.changePass
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_changepassword,
+                R.id.createSurveyFragment, R.id.beforeSurveyFragment,
+                R.id.nav_questionsList, R.id.nav_create_Question,
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
