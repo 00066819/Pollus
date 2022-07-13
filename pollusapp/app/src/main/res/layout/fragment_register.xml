@@ -8,7 +8,7 @@
     android:background="@color/background_app">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/arrowReturn"
         android:layout_width="@dimen/back_w_register"
         android:layout_height="@dimen/back_h_register"
         android:background="@drawable/back"
@@ -24,7 +24,7 @@
         android:src="@drawable/logo_transparent_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/arrowReturn"
         android:layout_marginTop="1dp"/>
 
     <TextView

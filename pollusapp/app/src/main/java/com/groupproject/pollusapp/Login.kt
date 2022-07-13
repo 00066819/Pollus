@@ -14,7 +14,7 @@ import com.groupproject.pollusapp.databinding.FragmentLoginBinding
 
 class Login : AppCompatActivity() {
 
-    private lateinit var binding: FragmentLoginBinding
+        /* private lateinit var binding: FragmentLoginBinding
     val app by lazy {
         application as
     }
@@ -54,5 +54,5 @@ class Login : AppCompatActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
-    }
+    }*/
     }

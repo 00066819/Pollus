@@ -4,117 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/background_app">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="@dimen/back_w_register"
-        android:layout_height="@dimen/back_h_register"
-        android:layout_marginTop="@dimen/default_gap"
-        android:layout_marginLeft="@dimen/default_gap"
-        android:background="@drawable/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/User_image"
-        android:layout_width="@dimen/logo_w_register_size"
-        android:layout_height="@dimen/logo_h_register_size"
-        android:src="@drawable/user_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name_text"
-        android:layout_marginTop="1dp"/>
-
-    <TextView
-        android:id="@+id/Name_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Juan Perez"
-        android:textAppearance="@style/pollus"
-        android:textSize="24dp"
-        android:layout_marginTop="@dimen/default_gap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
-
-    <TextView
-        android:id="@+id/name_register_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/email_text"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/User_image" />
-
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_profile_textImput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/groups_cardView"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
         android:layout_marginStart="@dimen/default_gap"
         android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/example_email_text"
-        app:boxBackgroundColor="@color/background_app"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/default_gap"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_register_textView">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/group_title_txt"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/text_color_hint"
-            android:editable="false"/>
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="15dp"
+            android:text="Nombre del grupo"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            app:cardBackgroundColor="#EDEBEB">
 
-    <TextView
-        android:id="@+id/organization_textview"
+            <TextView
+                android:id="@+id/description_group_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Titulo de encuestas"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="Empresa/Organizacion"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_profile_textImput" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_register_textImput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_gap"
-        android:layout_marginEnd="@dimen/default_gap"
-        android:hint="Alcaldia Municipal de Usulutan"
-        app:boxBackgroundColor="@color/background_app"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/organization_textview">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColorHint="@color/text_color_hint"
-            android:editable="false"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/change_pass_button"
-        style="Widget.MaterialComponents.Button.Icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/primary_color"
-        android:text="@string/change_pass_textbtn"
-        app:icon="@drawable/key_icon"
-        app:iconSize="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="205dp"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
