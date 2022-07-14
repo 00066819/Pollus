@@ -1,3 +1,5 @@
 package com.groupproject.pollusapp.network.dto
 
-data class LoginResponse (val token: String)
+import com.google.gson.annotations.SerializedName
+
+data class LoginResponse (@SerializedName("token") val token: String)

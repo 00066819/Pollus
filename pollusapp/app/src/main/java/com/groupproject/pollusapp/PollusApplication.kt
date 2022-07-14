@@ -6,20 +6,20 @@ import android.content.SharedPreferences
 import com.groupproject.pollusapp.network.RetrofitInstance
 import com.groupproject.pollusapp.repository.LoginRepository
 
-class PollusApplication: Application() {
+/* class PollusApplication: Application() {
     private val prefs: SharedPreferences by lazy {
-        getSharedPreferences("DummyDictionary", Context.MODE_PRIVATE)
+        getSharedPreferences("PollusApp", Context.MODE_PRIVATE)
     }
 
 
     private fun getAPIService() = with(RetrofitInstance) {
         setToken(getToken())
-        getWordServices()
+        // getSer()
 
-    }
+    } */
 
 
-fun getLoginRepository() =
+/* fun getLoginRepository() =
         LoginRepository(getAPIService())
 
     private fun getToken(): String = prefs.getString(USER_TOKEN, "")!!
@@ -35,4 +35,4 @@ fun getLoginRepository() =
     companion object {
         const val USER_TOKEN = "user_token"
     }
-}
+} */

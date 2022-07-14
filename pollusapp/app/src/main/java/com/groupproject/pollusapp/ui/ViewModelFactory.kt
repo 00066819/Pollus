@@ -1,4 +1,4 @@
-package com.dgasteazoro.dummydictionary.ui
+/* package com.groupproject.pollusapp.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
@@ -16,4 +16,4 @@ class ViewModelFactory<R>(private val repository: R) :
         throw IllegalArgumentException("Unknown ViewModel Class")
     }
 
-}
+} */

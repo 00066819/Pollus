@@ -44,6 +44,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/text_color_hint"/>
@@ -68,6 +69,7 @@
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/text_color_hint"

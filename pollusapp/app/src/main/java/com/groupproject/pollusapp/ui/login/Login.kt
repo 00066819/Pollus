@@ -1,18 +1,6 @@
 package com.groupproject.pollusapp.ui.login
 
-import android.content.Intent
-import android.os.Bundle
-import android.util.Log
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
-import com.dgasteazoro.dummydictionary.ui.ViewModelFactory
-import com.dgasteazoro.dummydictionary.ui.login.LoginUiStatus
-import com.dgasteazoro.dummydictionary.ui.login.LoginViewModel
-import com.groupproject.pollusapp.MainActivity
-import com.groupproject.pollusapp.PollusApplication
-import com.groupproject.pollusapp.R
-import com.groupproject.pollusapp.databinding.FragmentLoginBinding
 
 
 class Login : AppCompatActivity() {

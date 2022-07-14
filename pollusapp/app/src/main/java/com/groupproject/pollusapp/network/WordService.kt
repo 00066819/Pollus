@@ -1,4 +1,4 @@
-package com.groupproject.pollusapp.network
+/*package com.groupproject.pollusapp.network
 
 import com.groupproject.pollusapp.network.dto.LoginRequest
 import com.groupproject.pollusapp.network.dto.LoginResponse
@@ -14,4 +14,4 @@ interface WordService {
         suspend fun login(@Body credentials: LoginRequest): LoginResponse
 
 
-}
+}*/

@@ -1,9 +1,11 @@
 package com.groupproject.pollusapp.network
 
+import com.groupproject.pollusapp.network.dto.Service
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 
 const val BASE_URL = "https://pollusbakcend.herokuapp.com/" // cambiar IP a IP local
 
@@ -36,4 +38,5 @@ object RetrofitInstance {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
+    fun Service(): Service = retrofit.create(Service::class.java)
 }
