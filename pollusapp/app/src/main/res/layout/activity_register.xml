@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/default_gap"
     android:background="@color/background_app"
     tools:context=".Register">
 
@@ -40,48 +45,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <TextView
-        android:id="@+id/name_register_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/name_textView"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pollus" />
-
-
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name_register_textImput"
+        android:id="@+id/username_register_textImput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
         android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/register_name_hint"
+        android:hint="@string/username_register_textview"
         app:boxBackgroundColor="@color/background_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_register_textView">
+        app:layout_constraintTop_toBottomOf="@+id/pollus">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_register_ti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/text_color_hint" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/email_register_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/email_textView"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_register_textImput" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_register_textImput"
@@ -89,29 +72,56 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
         android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/email_register_hint"
+        android:hint="@string/email_textView"
         app:boxBackgroundColor="@color/background_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_register_textview">
+        app:layout_constraintTop_toBottomOf="@+id/username_register_textImput">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_register_ti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/text_color_hint" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/password_register_textview"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_register_textImput"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/pass_register_hint"
-        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/default_gap"
+        android:hint="@string/name_register_textview"
+        app:boxBackgroundColor="@color/background_app"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_register_textImput" />
+        app:layout_constraintTop_toBottomOf="@+id/email_register_textImput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_register_ti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastname_register_textImput"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/default_gap"
+        android:hint="@string/lastname_register_textview"
+        app:boxBackgroundColor="@color/background_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_register_textImput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastname_register_ti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 
 
@@ -121,33 +131,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
         android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/imput_pass_hint"
+        android:hint="@string/pass_register_hint"
         app:boxBackgroundColor="@color/background_app"
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_register_textview"
-        app:endIconMode="password_toggle">
+        app:layout_constraintTop_toBottomOf="@+id/lastname_register_textImput">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_register_ti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@color/text_color_hint"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:textColorHint="@color/text_color_hint" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/code_register_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/code_textView"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_register_textImput" />
-
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/code_register_textImput"
@@ -155,13 +153,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_gap"
         android:layout_marginEnd="@dimen/default_gap"
-        android:hint="@string/code_register_hint"
+        android:hint="@string/code_textView"
         app:boxBackgroundColor="@color/background_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/code_register_textView">
+        app:layout_constraintTop_toBottomOf="@+id/password_register_textImput">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/code_register_ti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/text_color_hint" />
@@ -175,8 +174,10 @@
         android:backgroundTint="@color/primary_color"
         android:text="@string/register_button_text"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/default_gap"
+        android:layout_marginBottom="@dimen/default_gap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/code_register_textImput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

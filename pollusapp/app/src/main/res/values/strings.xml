@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">pollusapp</string>
+    <string name="app_name">Pollus</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name_app_textview">Pollus</string>
@@ -52,4 +52,11 @@
     <string name="email_profile_default">juanperez@gmail.com</string>
     <string name="org_default_text">Alcaldia Municipal de Usulutan</string>
     <string name="cancel_button">Cancelar</string>
+    <string name="name_register_textview">Nombre</string>
+    <string name="name_register_hint">Juan</string>
+    <string name="lastname_register_textview">Apellido</string>
+    <string name="lastname_hint">Perez</string>
+    <string name="username_register_textview">Username</string>
+    <string name="username_hint">juanperez01</string>
+    <string name="register_error">Credenciales no válidas o campos vacíos</string>
 </resources>

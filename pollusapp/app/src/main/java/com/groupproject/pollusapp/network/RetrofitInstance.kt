@@ -15,8 +15,8 @@ object RetrofitInstance {
     }
     private var token = ""
 
-    fun setToken(value: String) {
-        token = value
+    fun setToken(value: String?) {
+        token = value.toString()
     }
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
